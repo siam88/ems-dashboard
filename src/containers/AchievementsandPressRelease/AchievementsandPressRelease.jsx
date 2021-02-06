@@ -8,6 +8,8 @@ import ClientReviewTable from "../../components/Table/ClientReviewTable/ClientRe
 import CustomModal from "../../components/modal/modal";
 import { UserOutlined } from "@ant-design/icons";
 import { Modal, Button } from "antd";
+import WhyChooseus from "../../components/Table/WhyChooseus/WhyChooseus";
+import AchievementsandPressReleaseTable from "../../components/Table/AchievementsandPressRelease/AchievementsandPressRelease";
 
 const { Title } = Typography;
 const Content = () => {
@@ -26,20 +28,41 @@ const Content = () => {
   };
   return (
     <div>
-      <Title>Home Slider info Table</Title>
+      <Title>Achievements and Press Release table</Title>
 
       <Button type="primary" onClick={showModal}>
-        Add Slider
+        Add 
       </Button>
       <Modal
-        title="Slider Information adding field"
+        title="Achievements and Press Release Information adding field"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
       >
         <Input
           size="large"
-          placeholder="Image Title"
+          placeholder="Happy Client"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        <Input
+          size="large"
+          placeholder="Project Completed"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        <Input
+          size="large"
+          placeholder="Photo Capture"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        <Input
+          size="large"
+          placeholder="Telephonic Talk"
           prefix={<UserOutlined />}
         />
         <br />
@@ -57,91 +80,11 @@ const Content = () => {
           prefix={<UserOutlined />}
         />
       </Modal>
-      <SliderTable />
+     
 
-      <Title>About us table </Title>
-
-      <Button type="primary" onClick={showModal}>
-        Add About us info
-      </Button>
-      <Modal
-        title="About us Information adding field"
-        visible={isModalVisible}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
-        <Input
-          size="large"
-          placeholder="Image Description"
-          prefix={<UserOutlined />}
-        />
-        <br />
-        <br />
-        <Input
-          size="large"
-          placeholder="Image Source"
-          prefix={<UserOutlined />}
-        />
-      </Modal>
-      <AboutusTable />
-
-      <Title>OUR PROFESSIONAL TEAM table </Title>
-
-      <Button type="primary" onClick={showModal}>
-        Add Person to the  PROFESSIONAL TEAM
-      </Button>
-      <Modal
-        title="About us Information adding field"
-        visible={isModalVisible}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
-        <Input
-          size="large"
-          placeholder="Person Name"
-          prefix={<UserOutlined />}
-        />
-        <br />
-        <br />
-        <Input
-          size="large"
-          placeholder="Person Position"
-          prefix={<UserOutlined />}
-        />
-        <br />
-        <br />
-        <Input
-          size="large"
-          placeholder="Image Source"
-          prefix={<UserOutlined />}
-        />
-      </Modal>
-      <ProfessionalTeam />
-
-      <Title>OUR Client Review table </Title>
+<AchievementsandPressReleaseTable/>
 
 
-<Modal
-  title="About us Information adding field"
-  visible={isModalVisible}
-  onOk={handleOk}
-  onCancel={handleCancel}
->
-  <Input
-    size="large"
-    placeholder="Person Name"
-    prefix={<UserOutlined />}
-  />
-  <br />
-  <br />
- 
-  <Input
-    size="large"
-    placeholder="comment"
-    prefix={<UserOutlined />}
-  />
-</Modal>
-<ClientReviewTable />
     </div>
   );
 };

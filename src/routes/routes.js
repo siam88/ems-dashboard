@@ -21,6 +21,12 @@ import GCommerceOrders from '../containers/GCommerce/Orders/Order'
 import PointsAndRewards from '../containers/GCommerce/Points&Rewards/Points&Rewards'
 import Reports from '../containers/GCommerce/Reports/Reports'
 import Settings from '../containers/GCommerce/Settings/Settings'
+import Whychooseus from '../containers/whychooseus/whychooseus'
+import ClientReivews from '../containers/ClientReivews/ClientReivews'
+import AchievementsandPressRelease from '../containers/AchievementsandPressRelease/AchievementsandPressRelease'
+
+
+
 
 import Coupons from '../containers/Marketing/Coupons/Coupon'
 
@@ -94,43 +100,54 @@ const routes = [
         icon: <BookOutlined />,
         subRoutes: [
             {
-                path: "/AllProducts",
-                name: "All Products",
+                path: "/whychooseus",
+                name: "why choose us",
                 icon: <ProfileOutlined />,
-                component: AllProducts,
+                component:Whychooseus,
             },
+            {
+                path: "/clientreview",
+                name: "client review",
+                icon: <ProfileOutlined />,
+                component:ClientReivews,
+            },
+            {
+                path: "/AchievementsandPressRelease",
+                name: "Achievements & Press Release",
+                icon: <ProfileOutlined />,
+                component:AchievementsandPressRelease,
+            },
+            // {
+            //     path: "/AddProduct",
+            //     name: "Add Product",
+            //     icon: <BorderInnerOutlined />,
+            //     component: AddProduct,
+            // },
 
-            {
-                path: "/AddProduct",
-                name: "Add Product",
-                icon: <BorderInnerOutlined />,
-                component: AddProduct,
-            },
-
-            {
-                path: "/Attributes",
-                name: "Attributes",
-                icon: <FileSearchOutlined />,
-                component: Attributes,
-            },
-            {
-                path: "/Categories",
-                name: "Categories",
-                icon: <AppstoreAddOutlined />,
-                component: Categories,
-            },
-            {
-                path: "/Request",
-                name: "Request",
-                icon: <PullRequestOutlined />,
-                component: Request,
-            },
-            {
-                path: "/Tags",
-                name: "Tags",
-                icon: <TagsOutlined />,
-                component: Tags,
-            },
+            // {
+            //     path: "/Attributes",
+            //     name: "Attributes",
+            //     icon: <FileSearchOutlined />,
+            //     component: Attributes,
+            // },
+            // {
+            //     path: "/Categories",
+            //     name: "Categories",
+            //     icon: <AppstoreAddOutlined />,
+            //     component: Categories,
+            // },
+            // {
+            //     path: "/Request",
+            //     name: "Request",
+            //     icon: <PullRequestOutlined />,
+            //     component: Request,
+            // },
+            // {
+            //     path: "/Tags",
+            //     name: "Tags",
+            //     icon: <TagsOutlined />,
+            //     component: Tags,
+            // },
         ]
 
     },
