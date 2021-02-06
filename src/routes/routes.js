@@ -25,6 +25,7 @@ import Whychooseus from '../containers/whychooseus/whychooseus'
 import ClientReivews from '../containers/ClientReivews/ClientReivews'
 import AchievementsandPressRelease from '../containers/AchievementsandPressRelease/AchievementsandPressRelease'
 
+import EventHistory from '../containers/Event/EventHistory/EventHistory'
 
 
 
@@ -80,18 +81,7 @@ const routes = [
                 icon: <HomeOutlined />,
                 component: Content,
             },
-            // {
-            //     path: "/professionalTeam",
-            //     name: "professional Team",
-            //     icon: <HomeOutlined />,
-            //     component: professionalTeam,
-            // },
-            // {
-            //     path: "/ClientReview",
-            //     name: "Client Review",
-            //     icon: <HomeOutlined />,
-            //     component: ClientReview,
-            // }
+          
         ]
 
     },
@@ -117,37 +107,7 @@ const routes = [
                 icon: <ProfileOutlined />,
                 component:AchievementsandPressRelease,
             },
-            // {
-            //     path: "/AddProduct",
-            //     name: "Add Product",
-            //     icon: <BorderInnerOutlined />,
-            //     component: AddProduct,
-            // },
-
-            // {
-            //     path: "/Attributes",
-            //     name: "Attributes",
-            //     icon: <FileSearchOutlined />,
-            //     component: Attributes,
-            // },
-            // {
-            //     path: "/Categories",
-            //     name: "Categories",
-            //     icon: <AppstoreAddOutlined />,
-            //     component: Categories,
-            // },
-            // {
-            //     path: "/Request",
-            //     name: "Request",
-            //     icon: <PullRequestOutlined />,
-            //     component: Request,
-            // },
-            // {
-            //     path: "/Tags",
-            //     name: "Tags",
-            //     icon: <TagsOutlined />,
-            //     component: Tags,
-            // },
+           
         ]
 
     },
@@ -157,29 +117,24 @@ const routes = [
         icon: <AreaChartOutlined />,
         subRoutes: [
             {
-                path: "/Overview",
-                name: "Overview",
+                path: "/EventHistory",
+                name: "EventHistory",
                 icon: <AimOutlined />,
-                component: Overview,
+                component: EventHistory,
             },
-            {
-                path: "/Products",
-                name: "Products",
-                icon: <SkinOutlined />,
-                component: Products,
-            },
-            {
-                path: "/Stocks",
-                name: "Stocks",
-                icon: <StockOutlined />,
-                component: Stocks,
-            },
-            {
-                path: "/Analytics/Orders",
-                name: "Order ",
-                icon: <OrderedListOutlined />,
-                component: GCommerceOrders,
-            },
+            // {
+            //     path: "/UpcomingEvents",
+            //     name: "UpcomingEvents",
+            //     icon: <SkinOutlined />,
+            //     component: UpcomingEvents,
+            // },
+            // {
+            //     path: "/completedEvent",
+            //     name: "completedEvent",
+            //     icon: <StockOutlined />,
+            //     component: completedEvent,
+            // },
+            
         ]
 
     },
