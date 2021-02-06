@@ -30,6 +30,7 @@ import UpcomingEvents from '../containers/Event/UpcomingEvents/UpcomingEvents'
 import CompletedEvent from '../containers/Event/CompletedEvent/CompletedEvent'
 
 import teamMembers from '../containers/teamMembers/teamMembers'
+import Gellary from '../containers/Gellary/Gellary'
 
 import Coupons from '../containers/Marketing/Coupons/Coupon'
 
@@ -162,10 +163,10 @@ const routes = [
         icon: <NotificationOutlined />,
         subRoutes: [
             {
-                path: "/Coupons",
-                name: "Coupons",
+                path: "/Gellary",
+                name: "Gellary",
                 icon: <GiftOutlined />,
-                component: Coupons,
+                component: Gellary,
 
             }
         ]
