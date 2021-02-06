@@ -26,6 +26,7 @@ import ClientReivews from '../containers/ClientReivews/ClientReivews'
 import AchievementsandPressRelease from '../containers/AchievementsandPressRelease/AchievementsandPressRelease'
 
 import EventHistory from '../containers/Event/EventHistory/EventHistory'
+import UpcomingEvents from '../containers/Event/UpcomingEvents/UpcomingEvents'
 
 
 
@@ -122,12 +123,12 @@ const routes = [
                 icon: <AimOutlined />,
                 component: EventHistory,
             },
-            // {
-            //     path: "/UpcomingEvents",
-            //     name: "UpcomingEvents",
-            //     icon: <SkinOutlined />,
-            //     component: UpcomingEvents,
-            // },
+            {
+                path: "/UpcomingEvents",
+                name: "UpcomingEvents",
+                icon: <SkinOutlined />,
+                component: UpcomingEvents,
+            },
             // {
             //     path: "/completedEvent",
             //     name: "completedEvent",
