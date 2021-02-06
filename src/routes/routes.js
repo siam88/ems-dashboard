@@ -29,7 +29,7 @@ import EventHistory from '../containers/Event/EventHistory/EventHistory'
 import UpcomingEvents from '../containers/Event/UpcomingEvents/UpcomingEvents'
 import CompletedEvent from '../containers/Event/CompletedEvent/CompletedEvent'
 
-
+import teamMembers from '../containers/teamMembers/teamMembers'
 
 import Coupons from '../containers/Marketing/Coupons/Coupon'
 
@@ -146,47 +146,13 @@ const routes = [
         icon: <ThunderboltOutlined />,
         subRoutes: [
             {
-                path: "/GCommerce/Customers",
-                name: "Customers",
+                path: "/teamMembers",
+                name: "teamMembers",
                 icon: <TeamOutlined />,
-                component: Customers,
+                component: teamMembers,
 
-            },
-            {
-                path: "/GCommerce/Memberships",
-                name: "Memberships",
-                icon: <UserSwitchOutlined />,
-                component: Memberships,
-
-            },
-            {
-                path: "/GCommerce/Orders",
-                name: "Orders",
-                icon: <SelectOutlined />,
-                component: Orders,
-
-            },
-            {
-                path: "/GCommerce/PointsAndRewards",
-                name: "P&R",
-                icon: <TrophyOutlined />,
-                component: PointsAndRewards,
-
-            },
-            {
-                path: "/GCommerce/Reports",
-                name: "Reports",
-                icon: <ReconciliationOutlined />,
-                component: Reports,
-
-            },
-            {
-                path: "/GCommerce/Settings",
-                name: "Settings",
-                icon: <SettingOutlined />,
-                component: Settings,
-
-            },
+            }
+         
         ]
 
     },
