@@ -28,7 +28,7 @@ import AchievementsandPressRelease from '../containers/AchievementsandPressRelea
 import EventHistory from '../containers/Event/EventHistory/EventHistory'
 import UpcomingEvents from '../containers/Event/UpcomingEvents/UpcomingEvents'
 import CompletedEvent from '../containers/Event/CompletedEvent/CompletedEvent'
-
+import Package from '../containers/Package/Package'
 import teamMembers from '../containers/teamMembers/teamMembers'
 import Gellary from '../containers/Gellary/Gellary'
 
@@ -178,19 +178,13 @@ const routes = [
         icon: <ContactsOutlined />,
         subRoutes: [
             {
-                path: "/ContactForm",
-                name: "ContactForm",
+                path: "/Package",
+                name: "Package",
                 icon: <ContactsOutlined />,
-                component: ContactForm,
+                component: Package,
 
             },
-            {
-                path: "/Supports",
-                name: "Supports",
-                icon: <MedicineBoxOutlined />,
-                component: Supports,
-
-            }
+            
         ]
 
     },
