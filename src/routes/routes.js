@@ -27,6 +27,7 @@ import AchievementsandPressRelease from '../containers/AchievementsandPressRelea
 
 import EventHistory from '../containers/Event/EventHistory/EventHistory'
 import UpcomingEvents from '../containers/Event/UpcomingEvents/UpcomingEvents'
+import CompletedEvent from '../containers/Event/CompletedEvent/CompletedEvent'
 
 
 
@@ -129,12 +130,12 @@ const routes = [
                 icon: <SkinOutlined />,
                 component: UpcomingEvents,
             },
-            // {
-            //     path: "/completedEvent",
-            //     name: "completedEvent",
-            //     icon: <StockOutlined />,
-            //     component: completedEvent,
-            // },
+            {
+                path: "/completedEvent",
+                name: "completedEvent",
+                icon: <StockOutlined />,
+                component: CompletedEvent,
+            },
             
         ]
 
