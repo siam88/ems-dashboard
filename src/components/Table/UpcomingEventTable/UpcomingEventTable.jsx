@@ -4,7 +4,7 @@ import './UpcomingEventTable.css';
 import { Table, Input, InputNumber, Popconfirm, Form, Typography } from 'antd';
 const originData = [];
 
-for (let i = 0; i < 100; i++) {
+for (let i = 1; i < 100; i++) {
   originData.push({
     key: i.toString(),
     name: `User`,

@@ -27,7 +27,7 @@ const EventHistory = () => {
         Add 
       </Button> */}
       <Modal
-        title="Slider Information adding field"
+        // title="Slider Information adding field"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
