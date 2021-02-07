@@ -37,7 +37,7 @@ export const BarChart = () => {
           borderWidth: 1,
           datasets: [
             {
-              label: "#Cost of this month",
+              label: "#Register Acoount",
               data: [12, 16, 3, 5, 2, 3, 30, 32, 4, 1, 55, 64],
               backgroundColor: [
                 "rgba(255, 99, 132, 0.2)",
@@ -70,7 +70,7 @@ export const BarChart = () => {
             },
 
             {
-              label: "#Revenue of this month",
+              label: "#Visitors",
               data: [14, 20, 5, 15, 12, 30, 12, 15, 40, 11, 55, 70],
               backgroundColor: [
                 "rgba(255, 99, 132, 0.5)",

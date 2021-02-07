@@ -7,9 +7,9 @@ const originData = [];
 for (let i = 0; i < 100; i++) {
   originData.push({
     key: i.toString(),
-    name: `Edrward ${i}`,
-    age: 32,
-    address: `London Park no. ${i}`,
+    name: `User`,
+    id: `${i}`,
+    address: `Uttara`,
   });
 }
 
@@ -58,7 +58,7 @@ const EditableTable = () => {
   const edit = (record) => {
     form.setFieldsValue({
       name: '',
-      age: '',
+      id: '',
       address: '',
       ...record,
     });
@@ -92,27 +92,45 @@ const EditableTable = () => {
 
   const columns = [
     {
+      title: 'Id',
+      dataIndex: 'id',
+      width: '10%',
+      editable: true,
+    },
+    {
       title: 'Name',
       dataIndex: 'name',
-      width: '25%',
+      width: '20%',
       editable: true,
     },
     {
       title: 'Type',
       dataIndex: 'type',
-      width: '15%',
+      width: '10%',
       editable: true,
     },
     {
       title: 'Address',
       dataIndex: 'address',
-      width: '40%',
+      width: '25%',
+      editable: true,
+    },
+    {
+      title: 'Package',
+      dataIndex: 'package',
+      width: '10%',
+      editable: true,
+    },
+    {
+      title: 'Date',
+      dataIndex: 'date',
+      width: '10%',
       editable: true,
     },
     {
       title: 'Status',
       dataIndex: 'status',
-      width: '25%',
+      width: '20%',
       editable: true,
     },
     {
@@ -152,7 +170,7 @@ const EditableTable = () => {
       ...col,
       onCell: (record) => ({
         record,
-        inputType: col.dataIndex === 'age' ? 'number' : 'text',
+        inputType: col.dataIndex === 'id' ? 'number' : 'text',
         dataIndex: col.dataIndex,
         title: col.title,
         editing: isEditing(record),

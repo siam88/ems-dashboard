@@ -51,6 +51,13 @@ const UpcomingEvent = () => {
           placeholder="Address"
           prefix={<UserOutlined />}
         />
+         <br />
+        <br />
+        <Input
+          size="large"
+          placeholder="Package"
+          prefix={<UserOutlined />}
+        />
         <br />
         <br />
         <Input
