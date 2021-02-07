@@ -48,6 +48,13 @@ const UpcomingEvent = () => {
         <br />
         <Input
           size="large"
+          placeholder="Address"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        <Input
+          size="large"
           placeholder="Date"
           prefix={<UserOutlined />}
         />

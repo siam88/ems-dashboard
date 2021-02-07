@@ -92,21 +92,27 @@ const EditableTable = () => {
 
   const columns = [
     {
-      title: 'name',
+      title: 'Name',
       dataIndex: 'name',
       width: '25%',
       editable: true,
     },
     {
-      title: 'age',
-      dataIndex: 'age',
+      title: 'Type',
+      dataIndex: 'type',
       width: '15%',
       editable: true,
     },
     {
-      title: 'address',
+      title: 'Address',
       dataIndex: 'address',
       width: '40%',
+      editable: true,
+    },
+    {
+      title: 'Status',
+      dataIndex: 'status',
+      width: '25%',
       editable: true,
     },
     {

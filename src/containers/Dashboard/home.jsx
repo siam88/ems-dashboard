@@ -91,7 +91,7 @@ const Home = ({ match }) => {
         <Content>
           <Row justify={"space-between"}>
             <Col xs={10} sm={10} md={10} lg={12} xl={12}>
-              <Card title="Card Title">
+              {/* <Card title="Card Title">
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid hoverable={false} style={gridStyle}>
                   Content
@@ -113,7 +113,7 @@ const Home = ({ match }) => {
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
-              </Card>
+              </Card> */}
             </Col>{" "}
             <Col xs={10} sm={14} md={14} lg={12} xl={12}>
               <BarChart />
@@ -128,13 +128,13 @@ const Home = ({ match }) => {
             >
              
 
-              <Card title="Card Title">
+              <Card title="Dashboard">
                 <Card.Grid style={gridStyle}><Card
                 style={{ width: 300 }}
                 cover={
                   <img
                     alt="example"
-                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                    src="https://wallup.net/wp-content/uploads/2018/09/26/198988-Avatar_The_Last_Airbender-The_Legend_of_Korra-Korra-minimalism-red-748x421.jpg"
                   />
                 }
                 actions={[
@@ -145,10 +145,10 @@ const Home = ({ match }) => {
               >
                 <Meta
                   avatar={
-                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                    <Avatar src="https://inspirationfeed.com/wp-content/uploads/2020/01/chesser-800x561.jpg" />
                   }
-                  title="Card title"
-                  description="This is the description"
+                  title="Visitors"
+                  // description="This is the description"
                 />
               </Card></Card.Grid>
                 <Card.Grid hoverable={false} style={gridStyle}>
@@ -157,7 +157,7 @@ const Home = ({ match }) => {
                 cover={
                   <img
                     alt="example"
-                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoVgnr7bEtPdjK2IEck08AF9d9nr4SapXYg&usqp=CAU"
                   />
                 }
                 actions={[
@@ -168,21 +168,21 @@ const Home = ({ match }) => {
               >
                 <Meta
                   avatar={
-                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                    <Avatar src="https://inspirationfeed.com/wp-content/uploads/2020/01/chesser-800x561.jpg" />
                   }
-                  title="Card title"
-                  description="This is the description"
+                  title="Manage Events"
+                  // description="This is the description"
                 />
               </Card>
                 </Card.Grid>
+                {/* <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
-                <Card.Grid style={gridStyle}>Content</Card.Grid>
-                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid> */}
               </Card>
             </Col>
           </Row>
