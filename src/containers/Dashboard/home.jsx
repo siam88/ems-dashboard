@@ -91,7 +91,7 @@ const Home = ({ match }) => {
         <Content>
           <Row justify={"space-between"}>
             <Col xs={10} sm={10} md={10} lg={12} xl={12}>
-              <Card title="Card Title">
+              {/* <Card title="Card Title">
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid hoverable={false} style={gridStyle}>
                   Content
@@ -113,7 +113,7 @@ const Home = ({ match }) => {
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
-              </Card>
+              </Card> */}
             </Col>{" "}
             <Col xs={10} sm={14} md={14} lg={12} xl={12}>
               <BarChart />
@@ -175,14 +175,14 @@ const Home = ({ match }) => {
                 />
               </Card>
                 </Card.Grid>
+                {/* <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
-                <Card.Grid style={gridStyle}>Content</Card.Grid>
-                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid> */}
               </Card>
             </Col>
           </Row>
