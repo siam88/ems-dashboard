@@ -13,8 +13,9 @@ import logo from "../../../assets/logo/logo.png";
 const { SubMenu } = Menu;
 const { Header} = Layout;
 
-class TopNavBar extends Component {
-  render() {
+const TopNavBar=()=> {
+
+
     return (
       <Layout>
         <Header className="header">
@@ -35,7 +36,7 @@ class TopNavBar extends Component {
             <Menu.Item key="ChangePassword" icon={<SyncOutlined />}>
              Change Password
             </Menu.Item>
-            <Menu.Item key="Logout" icon={<LogoutOutlined />}>
+            <Menu.Item key="Logout" icon={<LogoutOutlined />} onClick={()=>localStorage.getItem('login',false)}>
               Logout
             </Menu.Item>
             </SubMenu>
@@ -44,7 +45,7 @@ class TopNavBar extends Component {
         </Header>
       </Layout>
     );
-  }
+  
 }
 
 export default TopNavBar;

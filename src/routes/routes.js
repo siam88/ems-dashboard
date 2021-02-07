@@ -66,14 +66,15 @@ import {
 } from "@ant-design/icons";
 
 const routes = [
+    
     {
-
+        
         name: "Dashboard",
         path: "/",
         icon: <DashboardOutlined />,
         subRoutes: [
             {
-                path: "/",
+                path: "/Home",
                 name: "Home",
                 icon: <HomeOutlined />,
                 component: Home,
