@@ -11,31 +11,36 @@ import {
   Descriptions,
   Breadcrumb,
   Rate,
+  Card,
+  Avatar,
 } from "antd";
 import "./home.css";
-import { HomeOutlined, UserOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  EditOutlined,
+  EllipsisOutlined,
+  SettingOutlined,
+} from "@ant-design/icons";
+const { Meta } = Card;
 
 const renderContent = (column = 2) => (
-  <Descriptions
-    size="small"
-    column={column}
-    style={{ border: "1px solid red" }}
-  >
-    <Descriptions.Item label="Franchise Name:">Lili Qu</Descriptions.Item>
-    <Descriptions.Item label="Franchise Id">
-      <a>421421</a>
+  <Descriptions size="small" column={column}>
+    <Descriptions.Item label="Name:">Admin</Descriptions.Item>
+    <Descriptions.Item label="Id">
+      <a>123456</a>
     </Descriptions.Item>
-    <Descriptions.Item label="Franchised From">2017-01-10</Descriptions.Item>
-    <Descriptions.Item label="Franchise  Rating ">
+    <Descriptions.Item label="From">2017-01-10</Descriptions.Item>
+    <Descriptions.Item label="Rating ">
       {" "}
       <Rate disabled defaultValue={5} style={{ fontSize: "14px" }} />
     </Descriptions.Item>
-    <Descriptions.Item label="Location coverage">
-      Gonghu Road, Xihu District, Hangzhou, Zhejiang, China
-    </Descriptions.Item>
+    <Descriptions.Item label="Location coverage">Dhaka</Descriptions.Item>
   </Descriptions>
 );
-
+const gridStyle = {
+  width: "25%",
+  textAlign: "center",
+};
 const Home = ({ match }) => {
   const { Header, Footer, Sider } = Layout;
   const Content = ({ children, extra }) => (
@@ -51,7 +56,7 @@ const Home = ({ match }) => {
         display: "flex",
         width: "max-content",
         justifyContent: "flex-end",
-        border: "1px solid red",
+
         marginLeft: "35%",
       }}
     ></div>
@@ -85,25 +90,100 @@ const Home = ({ match }) => {
         </PageHeader>
         <Content>
           <Row justify={"space-between"}>
-            <Col
-              style={{ border: "1px solid red " }}
-              xs={10}
-              sm={10}
-              md={10}
-              lg={12}
-              xl={12}
-            >
-              col-12
+            <Col xs={10} sm={10} md={10} lg={12} xl={12}>
+              <Card title="Card Title">
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid hoverable={false} style={gridStyle}>
+                  Content
+                </Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+              </Card>
             </Col>{" "}
-            <Col
-              xs={10}
-              sm={14}
-              md={14}
-              lg={12}
-              xl={12}
-              style={{ border: "1px solid red " }}
-            >
+            <Col xs={10} sm={14} md={14} lg={12} xl={12}>
               <BarChart />
+            </Col>
+            <Col
+              style={{ marginTop: "5%" }}
+              xs={24}
+              sm={24}
+              md={24}
+              lg={24}
+              xl={24}
+            >
+             
+
+              <Card title="Card Title">
+                <Card.Grid style={gridStyle}><Card
+                style={{ width: 300 }}
+                cover={
+                  <img
+                    alt="example"
+                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  />
+                }
+                actions={[
+                  <SettingOutlined key="setting" />,
+                  <EditOutlined key="edit" />,
+                  <EllipsisOutlined key="ellipsis" />,
+                ]}
+              >
+                <Meta
+                  avatar={
+                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                  }
+                  title="Card title"
+                  description="This is the description"
+                />
+              </Card></Card.Grid>
+                <Card.Grid hoverable={false} style={gridStyle}>
+                <Card
+                style={{ width: 300 }}
+                cover={
+                  <img
+                    alt="example"
+                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                  />
+                }
+                actions={[
+                  <SettingOutlined key="setting" />,
+                  <EditOutlined key="edit" />,
+                  <EllipsisOutlined key="ellipsis" />,
+                ]}
+              >
+                <Meta
+                  avatar={
+                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                  }
+                  title="Card title"
+                  description="This is the description"
+                />
+              </Card>
+                </Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+                <Card.Grid style={gridStyle}>Content</Card.Grid>
+              </Card>
             </Col>
           </Row>
         </Content>

@@ -27,7 +27,7 @@ const Content = () => {
   };
   return (
     <div>
-      <Title>Why choose us table</Title>
+      <Title>Why Choose US</Title>
 
       <Button type="primary" onClick={showModal}>
         Add 
@@ -40,23 +40,23 @@ const Content = () => {
       >
         <Input
           size="large"
-          placeholder="Image Title"
+          placeholder="Name"
           prefix={<UserOutlined />}
         />
         <br />
         <br />
         <Input
           size="large"
-          placeholder="Image Description"
+          placeholder="Designation"
           prefix={<UserOutlined />}
         />
-        <br />
+        {/* <br />
         <br />
         <Input
           size="large"
           placeholder="Image Source"
           prefix={<UserOutlined />}
-        />
+        /> */}
       </Modal>
       <WhyChooseus/>
 

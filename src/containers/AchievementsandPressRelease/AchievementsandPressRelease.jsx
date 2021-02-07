@@ -28,57 +28,57 @@ const Content = () => {
   };
   return (
     <div>
-      <Title>Achievements and Press Release table</Title>
+      <Title>Achievements</Title>
 
       <Button type="primary" onClick={showModal}>
         Add 
       </Button>
       <Modal
-        title="Achievements and Press Release Information adding field"
+        // title="Achievements and Press Release Information adding field"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
       >
         <Input
           size="large"
-          placeholder="Happy Client"
+          placeholder="Number"
           prefix={<UserOutlined />}
         />
         <br />
         <br />
-        <Input
+        {/* <Input
           size="large"
           placeholder="Project Completed"
           prefix={<UserOutlined />}
         />
         <br />
-        <br />
+        <br /> */}
         <Input
           size="large"
-          placeholder="Photo Capture"
+          placeholder="Description"
           prefix={<UserOutlined />}
         />
         <br />
         <br />
-        <Input
+        {/* <Input
           size="large"
           placeholder="Telephonic Talk"
           prefix={<UserOutlined />}
         />
         <br />
-        <br />
-        <Input
+        <br /> */}
+        {/* <Input
           size="large"
           placeholder="Image Description"
           prefix={<UserOutlined />}
         />
         <br />
-        <br />
-        <Input
+        <br /> */}
+        {/* <Input
           size="large"
           placeholder="Image Source"
           prefix={<UserOutlined />}
-        />
+        /> */}
       </Modal>
      
 

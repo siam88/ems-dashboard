@@ -27,36 +27,36 @@ const Content = () => {
   };
   return (
     <div>
-      <Title>Our team member  table</Title>
+      <Title>Our Team Memeber</Title>
 
       <Button type="primary" onClick={showModal}>
-        Add  Our team member 
+        Add
       </Button>
       <Modal
-        title="Slider Information adding field"
+        // title="Slider Information adding field"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
       >
         <Input
           size="large"
-          placeholder="Image Title"
+          placeholder="Name"
           prefix={<UserOutlined />}
         />
         <br />
         <br />
         <Input
           size="large"
-          placeholder="Image Description"
+          placeholder="Description"
           prefix={<UserOutlined />}
         />
-        <br />
+        {/* <br />
         <br />
         <Input
           size="large"
           placeholder="Image Source"
           prefix={<UserOutlined />}
-        />
+        /> */}
       </Modal>
       <ProfessionalTeam/>
 

@@ -94,19 +94,19 @@ const routes = [
         subRoutes: [
             {
                 path: "/whychooseus",
-                name: "why choose us",
+                name: "Why Choose US",
                 icon: <ProfileOutlined />,
                 component:Whychooseus,
             },
             {
                 path: "/clientreview",
-                name: "client review",
+                name: "Client Review",
                 icon: <ProfileOutlined />,
                 component:ClientReivews,
             },
             {
                 path: "/AchievementsandPressRelease",
-                name: "Achievements & Press Release",
+                name: "Achievements",
                 icon: <ProfileOutlined />,
                 component:AchievementsandPressRelease,
             },
@@ -121,19 +121,19 @@ const routes = [
         subRoutes: [
             {
                 path: "/EventHistory",
-                name: "EventHistory",
+                name: "Event History",
                 icon: <AimOutlined />,
                 component: EventHistory,
             },
             {
                 path: "/UpcomingEvents",
-                name: "UpcomingEvents",
+                name: "Manage Events",
                 icon: <SkinOutlined />,
                 component: UpcomingEvents,
             },
             {
                 path: "/completedEvent",
-                name: "completedEvent",
+                name: "Completed Event",
                 icon: <StockOutlined />,
                 component: CompletedEvent,
             },
@@ -148,7 +148,7 @@ const routes = [
         subRoutes: [
             {
                 path: "/teamMembers",
-                name: "teamMembers",
+                name: "Team Members",
                 icon: <TeamOutlined />,
                 component: teamMembers,
 
@@ -159,12 +159,12 @@ const routes = [
     },
     {
 
-        name: "Gellary",
+        name: "Gallery",
         icon: <NotificationOutlined />,
         subRoutes: [
             {
                 path: "/Gellary",
-                name: "Gellary",
+                name: "Gallery",
                 icon: <GiftOutlined />,
                 component: Gellary,
 
@@ -195,7 +195,7 @@ const routes = [
         subRoutes: [
             {
                 path: "/ContactForm",
-                name: "ContactForm",
+                name: "Contact Form",
                 icon: <ContactsOutlined />,
                 component: ContactForm,
 
@@ -217,7 +217,7 @@ const routes = [
         subRoutes: [
             {
                 path: "/ContactForm",
-                name: "ContactForm",
+                name: "Contact Form",
                 icon: <ContactsOutlined />,
                 component: ContactForm,
 

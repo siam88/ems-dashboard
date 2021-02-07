@@ -5,28 +5,21 @@ import { Table, Tag, Space, Image} from 'antd';
 
 const columns = [
     
+    // {
+    //     title: 'Event name',
+    //     dataIndex: 'Eventname',
+    //     key: 'Eventname',
+    // },
     {
-        title: 'Event name',
-        dataIndex: 'Eventname',
-        key: 'Eventname',
-    },
-    {
-        title: 'Event title',
+        title: 'Title',
         dataIndex: 'Eventtitle',
         key: 'Eventtitle',
     },
-    {
-        title: 'Event title',
-        dataIndex: 'Eventtitle',
-        key: 'Eventtitle',
-    },
-    {
-        title: 'Event Duration',
-        key: 'EventDuration',
-        dataIndex: 'EventDuration',
-       
-        
-    },
+    // {
+    //     title: 'Event Duration',
+    //     key: 'EventDuration',
+    //     dataIndex: 'EventDuration',
+    // },
     {
         title: 'Event Date',
         key: 'EventDate',
@@ -56,33 +49,23 @@ const columns = [
 const data = [
     {
         key: '1',
-        Eventname: 'John Brown',
-        Eventtitle: 'John Brown',
-        EventDuration: 'John Brown',
-        EventDate: '29 october 2021',
+        Eventname: 'Wedding',
+        Eventtitle: 'White theme wedding',
+        EventDuration: '6.00pm-12.00pm',
+        EventDate: '29 october 2020',
         Eventtype:'Wedding',
-        Description: 'dummy dummy dummy dummy 1',
+        // Description: 'dummy dummy dummy dummy 1',
      
     },
     {
         key: '2',
-        Eventname: 'John Brown',
-        Eventtitle: 'John Brown',
-        EventDuration: 'John Brown',
-        EventDate: '29 october 2021',
-        Eventtype:'Wedding',
-        Description: 'dummy dummy dummy dummy 1',
+        Eventname: 'Birthday',
+        Eventtitle: 'Jungle Theme',
+        EventDuration: '3.00pm-6.00pm',
+        EventDate: '29 november 2020',
+        Eventtype:'Birthday',
+        // Description: 'dummy dummy dummy dummy 1',
        
-    },
-    {
-        key: '3',
-        Eventname: 'John Brown',
-        Eventtitle: 'John Brown',
-        EventDuration: 'John Brown',
-        EventDate: '29 october 2021',
-        Eventtype:'Wedding',
-        Description: 'dummy dummy dummy dummy 1',
-      
     },
 ];
 const EventHistory = () => {

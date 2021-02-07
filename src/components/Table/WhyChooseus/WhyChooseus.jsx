@@ -11,7 +11,7 @@ const columns = [
         render: text => <a>{text}</a>,
     },
     {
-        title: 'Description',
+        title: 'Designaiton',
         dataIndex: 'Description',
         key: 'Description',
     },
@@ -32,34 +32,22 @@ const columns = [
 const data = [
     {
         key: '1',
-        Title: 'John Brown',
-        Description: 'dummy dummy dummy dummy 1',
+        Title: 'Sanjana Afrin ',
+        Description: 'CEO',
         Image: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
     },
     {
         key: '1',
-        Title: 'John Brown',
-        Description: 'dummy dummy dummy dummy 1',
+        Title: 'Ifta Kharul Islam',
+        Description: 'Managing Director',
         Image: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
     },
     {
         key: '1',
-        Title: 'John Brown',
-        Description: 'dummy dummy dummy dummy 1',
+        Title: 'Tahmidul Haque',
+        Description: 'Media Manager',
         Image: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-    },
-    {
-        key: '1',
-        Title: 'John Brown',
-        Description: 'dummy dummy dummy dummy 1',
-        Image: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-    },
-    {
-        key: '1',
-        Title: 'John Brown',
-        Description: 'dummy dummy dummy dummy 1',
-        Image: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-    },
+    }
 ];
 
 const WhyChooseus = () => {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Table, Tag, Space, Typography, Input } from "antd";
 import SliderTable from "../../components/Table/SliderTable/SliderTable";
 import AboutusTable from "../../components/Table/AboutusTable/AboutusTable";
-import ProfessionalTeam from "../../components/Table/ProfessionalTeam/ProfessionalTeam";
+import CompletedEventTable from "../../components/Table/CompletedEventTable/CompletedEventTable";
 import ClientReviewTable from "../../components/Table/ClientReviewTable/ClientReviewTable";
 
 import CustomModal from "../../components/modal/modal";
@@ -27,10 +27,10 @@ const Gellary = () => {
   };
   return (
     <div>
-      <Title>Our Gellary table</Title>
+      <Title>Our Gallery</Title>
 
       <Button type="primary" onClick={showModal}>
-        Add  pictures to our Gellary
+        Add  pictures to our Gallery
       </Button>
       <Modal
         title="Slider Information adding field"
@@ -58,7 +58,7 @@ const Gellary = () => {
           prefix={<UserOutlined />}
         />
       </Modal>
-      <ProfessionalTeam/>
+      <CompletedEventTable/>
 
 
 

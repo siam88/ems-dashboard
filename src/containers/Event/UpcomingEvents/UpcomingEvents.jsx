@@ -21,57 +21,56 @@ const UpcomingEvent = () => {
   };
   return (
     <div>
-      <Title>Upcoming Event table</Title>
+      <Title>Manage Events</Title>
 
       <Button type="primary" onClick={showModal}>
-        Add Upcoming Event
+        Add
       </Button>
       <Modal
-        title="Slider Information adding field"
+        // title="Slider Information adding field"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
       >
         <Input
           size="large"
-          placeholder="Event name"
+          placeholder="Name"
           prefix={<UserOutlined />}
         />
         <br />
         <br />
         <Input
           size="large"
-          placeholder="Event title"
+          placeholder="Type"
           prefix={<UserOutlined />}
         />
         <br />
         <br />
         <Input
+          size="large"
+          placeholder="Date"
+          prefix={<UserOutlined />}
+        />
+        {/* <Input
           size="large"
           placeholder="Event Duration"
           prefix={<UserOutlined />}
         />
         <br />
-        <br />
-        <Input
-          size="large"
-          placeholder="Event Date"
-          prefix={<UserOutlined />}
-        />
-        <br />
-        <br />
-        <Input
+        <br /> */}
+       
+        {/* <Input
           size="large"
           placeholder="Image Description"
           prefix={<UserOutlined />}
         />
         <br />
-        <br />
-        <Input
+        <br /> */}
+        {/* <Input
           size="large"
           placeholder="Image Source"
           prefix={<UserOutlined />}
-        />
+        /> */}
       </Modal>
       <UpcomingEventTable/>
 

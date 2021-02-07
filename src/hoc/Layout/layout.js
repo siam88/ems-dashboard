@@ -26,7 +26,7 @@ class LayoutComponent extends Component {
                         </Content>
                     </Layout>
                 </Layout>
-                <Footer style={{ textAlign: 'center' }}>EcarnivalBD ©2021 Created by IT Team</Footer>
+                <Footer style={{ textAlign: 'center' }}>All right reserves ©2021 by IFTI</Footer>
             </Layout>
         )
     }

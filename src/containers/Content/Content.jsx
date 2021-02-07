@@ -26,7 +26,7 @@ const Content = () => {
   };
   return (
     <div>
-      <Title>Home Slider info Table</Title>
+      <Title>Home Slider</Title>
 
       <Button type="primary" onClick={showModal}>
         Add Slider
@@ -42,7 +42,15 @@ const Content = () => {
           placeholder="Image Title"
           prefix={<UserOutlined />}
         />
-        <br />
+        <br />        <Input
+          size="large"
+          placeholder="Image Source"
+          prefix={<UserOutlined />}
+        />        <Input
+        size="large"
+        placeholder="Image Source"
+        prefix={<UserOutlined />}
+      />
         <br />
         <Input
           size="large"

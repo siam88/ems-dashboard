@@ -27,7 +27,7 @@ const Content = () => {
   };
   return (
     <div>
-      <Title>Client Review Table</Title>
+      <Title>Client Review</Title>
 
       <Button type="primary" onClick={showModal}>
         Add 

@@ -21,11 +21,11 @@ const UpcomingEvent = () => {
   };
   return (
     <div>
-      <Title>Completed Event table</Title>
+      <Title>Completed Events</Title>
 
-      <Button type="primary" onClick={showModal}>
+      {/* <Button type="primary" onClick={showModal}>
         Add Completed Event
-      </Button>
+      </Button> */}
       <Modal
         title="Slider Information adding field"
         visible={isModalVisible}

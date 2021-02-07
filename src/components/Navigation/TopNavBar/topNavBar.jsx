@@ -28,7 +28,7 @@ class TopNavBar extends Component {
             defaultSelectedKeys={[3]}
             style={{ float: "right" }}
           >
-            <SubMenu icon={<UserOutlined />} title=" Md. MADDY ASIF">
+            <SubMenu icon={<UserOutlined />} title="Admin">
             <Menu.Item key="MyProfile" icon={<UserOutlined />}>
               My Profile
             </Menu.Item>

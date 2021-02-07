@@ -27,25 +27,60 @@ const Package = () => {
   };
   return (
     <div>
-      <Title>Our Package  table</Title>
+      <Title>Our Package</Title>
 
       <Button type="primary" onClick={showModal}>
-        Add  Package 
+        Add Package 
       </Button>
       <Modal
-        title="Slider Information adding field"
+        // title="Slider Information adding field"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
       >
         <Input
           size="large"
-          placeholder="Image Title"
+          placeholder="Package Name"
           prefix={<UserOutlined />}
         />
         <br />
         <br />
         <Input
+          size="large"
+          placeholder="Package Price"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />  
+        <Input
+          size="large"
+          placeholder="Stage"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        <Input
+          size="large"
+          placeholder="Photographer"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        <Input
+          size="large"
+          placeholder="Videographer"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        <Input
+          size="large"
+          placeholder="Description"
+          prefix={<UserOutlined />}
+        />
+        <br />
+        <br />
+        {/* <Input
           size="large"
           placeholder="Image Description"
           prefix={<UserOutlined />}
@@ -56,7 +91,7 @@ const Package = () => {
           size="large"
           placeholder="Image Source"
           prefix={<UserOutlined />}
-        />
+        /> */}
       </Modal>
       <PackageTable/>
 

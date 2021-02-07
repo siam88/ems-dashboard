@@ -21,11 +21,11 @@ const EventHistory = () => {
   };
   return (
     <div>
-      <Title>Why choose us table</Title>
-
+      <Title>History</Title>
+{/* 
       <Button type="primary" onClick={showModal}>
         Add 
-      </Button>
+      </Button> */}
       <Modal
         title="Slider Information adding field"
         visible={isModalVisible}
