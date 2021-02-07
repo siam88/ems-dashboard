@@ -25,7 +25,7 @@ const { Meta } = Card;
 
 const renderContent = (column = 2) => (
   <Descriptions size="small" column={column}>
-    <Descriptions.Item label="Name:">Admin</Descriptions.Item>
+    {/* <Descriptions.Item label="Name:">Admin</Descriptions.Item>
     <Descriptions.Item label="Id">
       <a>123456</a>
     </Descriptions.Item>
@@ -34,7 +34,7 @@ const renderContent = (column = 2) => (
       {" "}
       <Rate disabled defaultValue={5} style={{ fontSize: "14px" }} />
     </Descriptions.Item>
-    <Descriptions.Item label="Location coverage">Dhaka</Descriptions.Item>
+    <Descriptions.Item label="Location coverage">Dhaka</Descriptions.Item> */}
   </Descriptions>
 );
 const gridStyle = {
