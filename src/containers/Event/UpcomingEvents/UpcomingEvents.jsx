@@ -27,7 +27,7 @@ const UpcomingEvent = () => {
         Add
       </Button>
       <Modal
-        // title="Slider Information adding field"
+        title="Add new event"
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}

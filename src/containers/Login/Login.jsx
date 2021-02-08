@@ -56,13 +56,13 @@ const NormalLoginForm = () => {
         />
       </Form.Item>
       <Form.Item>
-        <Form.Item name="remember" valuePropName="checked" noStyle>
+        {/* <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>Remember me</Checkbox>
-        </Form.Item>
+        </Form.Item> */}
 
-        <a className="login-form-forgot" href="">
+        {/* <a className="login-form-forgot" href="">
           Forgot password
-        </a>
+        </a> */}
       </Form.Item>
 
       <Form.Item>
@@ -70,7 +70,7 @@ const NormalLoginForm = () => {
           Log in
         </Button>
         </Link>
-        Or <a href="">register now!</a>
+        {/* Or <a href="">register now!</a> */}
       </Form.Item>
     </Form>
     </div>

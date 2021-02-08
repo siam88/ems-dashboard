@@ -73,7 +73,7 @@ const Home = ({ match }) => {
   return (
     <>
       <Layout>
-        <PageHeader
+        {/* <PageHeader
           className="site-page-header-responsive"
           onBack={() => window.history.back()}
           title="Home"
@@ -85,9 +85,9 @@ const Home = ({ match }) => {
               Primary
             </Button>,
           ]}
-        >
-          <Content extra={extraContent}>{renderContent()}</Content>
-        </PageHeader>
+        > */}
+          {/* <Content extra={extraContent}>{renderContent()}</Content>
+        </PageHeader> */}
         <Content>
           <Row justify={"space-between"}>
             <Col xs={10} sm={10} md={10} lg={12} xl={12}>
@@ -115,9 +115,9 @@ const Home = ({ match }) => {
                 <Card.Grid style={gridStyle}>Content</Card.Grid>
               </Card> */}
             </Col>{" "}
-            <Col xs={10} sm={14} md={14} lg={12} xl={12}>
+            {/* <Col xs={10} sm={14} md={14} lg={12} xl={12}>
               <BarChart />
-            </Col>
+            </Col> */}
             <Col
               style={{ marginTop: "5%" }}
               xs={24}
@@ -130,11 +130,11 @@ const Home = ({ match }) => {
 
               <Card title="Dashboard">
                 <Card.Grid style={gridStyle}><Card
-                style={{ width: 300 }}
+                style={{ width: 300 , height: 300}}
                 cover={
                   <img
                     alt="example"
-                    src="https://wallup.net/wp-content/uploads/2018/09/26/198988-Avatar_The_Last_Airbender-The_Legend_of_Korra-Korra-minimalism-red-748x421.jpg"
+                    src="https://www.safetysupplywarehouse.com/v/vspfiles/photos/HHD-39-2T.jpg"
                   />
                 }
                 actions={[
@@ -148,17 +148,17 @@ const Home = ({ match }) => {
                   avatar={
                     <Avatar src="https://inspirationfeed.com/wp-content/uploads/2020/01/chesser-800x561.jpg" />
                   }
-                  title="Visitors"
+                  // title="Visitors"
                   // description="This is the description"
                 />
               </Card></Card.Grid>
                 <Card.Grid hoverable={false} style={gridStyle}>
                 <Card
-                style={{ width: 300 }}
+                style={{ width: 300, height: 300}}
                 cover={
                   <img
                     alt="example"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoVgnr7bEtPdjK2IEck08AF9d9nr4SapXYg&usqp=CAU"
+                    src="https://www.cityofnewportrichey.org/wp-content/uploads/2018/02/Events.gif"
                   />
                 }
                 actions={[
